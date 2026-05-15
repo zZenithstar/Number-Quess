@@ -55,7 +55,7 @@ def computer():
             if downLim >= upLim:
                 quess = downLim
             else:
-                quess = random.randrange(downLim, upLim)
+                quess = random.randrange(downLim+1, upLim)
 
             isTrue = input(f"Your Number Is: {quess}\n1-)CORRECT\n2-)GO UP\n3-)GO DOWN\n")
             if(isTrue == "1"):
